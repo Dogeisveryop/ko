@@ -1,0 +1,26 @@
+body {
+    background-color:palevioletred;
+}
+
+.heading {
+    width: 40%;
+    font-size: 30px;
+}
+
+.trained {
+    font-size: 20px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#camera, #result {
+    border: 3px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#Nameofobj , #Accuracy {
+
+    color:black;
+}

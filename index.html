@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+       <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Face Recognition</h1>
+       <br>
+       <h3 style="font-size: 22px;">Model is trained to identify the following objects: </h3>
+       <br>
+       <hr>
+       <br>
+       <H3>
+        Father
+       </H3>
+       <br>
+       <h3>
+        Mother
+       </h3>
+       <br>
+       <h3>
+        Brother
+       </h3>
+       <br>
+       <h3>
+        Sister
+       </h3>
+       <br>
+       <hr>
+       <br>
+      <label>Webcam View - </label>
+       <div id="camera" style="width: 700px;height: 400px;border: 10px;border-style: ridge;border-color: black;"></div>
+      <br><br>
+       <div id="result" style="width: 700px;height: 400px;border: 10px;border-style: ridge;border-color: black;"></div>
+      <br><br>
+       <button class="btn btn-danger" onclick="takepic()"> Capture Image </button>
+      <br><br>
+      <button class="btn btn-primary" onclick="check()"> Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Object : <span id="Nameofobj" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span> </p>
+      <p style="font-size: 22px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Accuracy : <span id="Accuracy" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
